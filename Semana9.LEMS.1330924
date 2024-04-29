@@ -1,0 +1,78 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace S9.LEMS._1330924
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //INICIO- area donde se programa
+            // int hora;
+
+
+            //Console.Write("Ingrese la hora actual(de 0 a 23): ");
+            //Asi se lee una variable int 
+            //hora= Convert.ToInt16(Console.ReadLine());
+
+            // if (hora >= 0 && hora <= 11)
+            //  {
+            //      Console.WriteLine("Buenos dias");
+            //   }
+            // else if (hora >= 12 && hora <= 18)
+            //      Console.WriteLine("Buenas tardes");
+            //   else
+            //   {
+            //    Console.WriteLine("Buenas noches");
+            //  }
+
+            //INICIO-Programa 2
+            //string sonido;
+
+            //  Console.WriteLine("Ingrese un sonido: ");
+            // sonido= Console.ReadLine();
+
+            // switch(sonido)
+            // {
+            //    case  "muu":
+            //        Console.WriteLine("Es una vaca");
+            //      break;
+            //case "cuac":
+            //  Console.WriteLine("Es un pato");
+            //break;
+            //  case "guau":
+            //    Console.WriteLine("Es un perro");
+            //  break;
+            //default:
+            //  Console.WriteLine("Sonido desconocido");
+            //        break;
+            // }
+
+            //INICIO-Programa 3
+            String caracter;
+            int largo;
+            Console.WriteLine("Ingrese el caracter quedesea imprimir: ");
+            caracter = Console.ReadLine();
+            Console.WriteLine("Ingrese el largo del lado del cuadrado");
+            largo = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("");
+
+            for (int i=1; i <= largo; i++)
+            {
+               for (int j=1; j<= largo; j++)
+                {
+                    Console.Write(caracter);
+                }
+                Console.WriteLine("");
+               }
+
+            //siempre se pone esto al final
+            Console.ReadKey();
+            //FIN-area donde se programa
+        }
+    }
+}
